@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<smooks-resource-list xmlns="http://www.milyn.org/xsd/smooks-1.1.xsd"
+	xmlns:jb="http://www.milyn.org/xsd/smooks/javabean-1.1.xsd">
+
+	<jb:bindings beanId="query" class="com.acorr.stockPositions.queryResultMessage.Query" createOnElement="query">
+		<jb:wiring property="results" beanIdRef="results" />
+	</jb:bindings>
+
+	<jb:bindings beanId="results" class="com.acorr.stockPositions.queryResultMessage.Results" createOnElement="results">
+		<jb:wiring property="quotes" beanIdRef="quotes" />
+	</jb:bindings>
+
+	<jb:bindings beanId="quotes" class="java.util.ArrayList" createOnElement="results">
+		<jb:wiring beanIdRef="quote" />
+	</jb:bindings>
+
+	<jb:bindings beanId="quote" class="com.acorr.stockPositions.queryResultMessage.Quotes" createOnElement="quote">
+		<jb:value property="changeRealtime" decoder="String" data="quote/changeRealtime" />
+		<jb:value property="lastTradeDate" decoder="String" data="quote/lastTradeDate" />
+		<jb:value property="earningsShare" decoder="String" data="quote/earningsShare" />
+		<jb:value property="daysLow" decoder="String" data="quote/daysLow" />
+		<jb:value property="daysHigh" decoder="String" data="quote/daysHigh" />
+		<jb:value property="yearLow" decoder="String" data="quote/yearLow" />
+		<jb:value property="yearHigh" decoder="String" data="quote/yearHigh" />
+		<jb:value property="marketCapitalization" decoder="String" data="quote/marketCapitalization" />
+		<jb:value property="changeFromYearLow" decoder="String" data="quote/changeFromYearLow" />
+		<jb:value property="percentChangeFromYearLow" decoder="String" data="quote/percentChangeFromYearLow" />
+		<jb:value property="changePercentRealtime" decoder="String" data="quote/changePercentRealtime" />
+		<jb:value property="changeFromYearHigh" decoder="String" data="quote/changeFromYearHigh" />
+		<jb:value property="percebtChangeFromYearHigh" decoder="String" data="quote/percebtChangeFromYearHigh" />
+		<jb:value property="lastTradePriceOnly" decoder="String" data="quote/lastTradePriceOnly" />
+		<jb:value property="highLimit" decoder="String" data="quote/highLimit" />
+		<jb:value property="lowLimit" decoder="String" data="quote/lowLimit" />
+		<jb:value property="daysRange" decoder="String" data="quote/daysRange" />
+		<jb:value property="daysRangeRealtime" decoder="String" data="quote/daysRangeRealtime" />
+		<jb:value property="fiftydayMovingAverage" decoder="String" data="quote/fiftydayMovingAverage" />
+		<jb:value property="twoHundreddayMovingAverage" decoder="String" data="quote/twoHundreddayMovingAverage" />
+		<jb:value property="changeFromTwoHundreddayMovingAverage" decoder="String" data="quote/changeFromTwoHundreddayMovingAverage" />
+		<jb:value property="percentChangeFromTwoHundreddayMovingAverage" decoder="String" data="quote/percentChangeFromTwoHundreddayMovingAverage" />
+		<jb:value property="changeFromFiftydayMovingAverage" decoder="String" data="quote/changeFromFiftydayMovingAverage" />
+		<jb:value property="percentChangeFromFiftydayMovingAverage" decoder="String" data="quote/percentChangeFromFiftydayMovingAverage" />
+		<jb:value property="name" decoder="String" data="quote/name" />
+		<jb:value property="open" decoder="String" data="quote/open" />
+		<jb:value property="previousClose" decoder="String" data="quote/previousClose" />
+		<jb:value property="pricePaid" decoder="String" data="quote/pricePaid" />
+		<jb:value property="changeinPercent" decoder="String" data="quote/changeinPercent" />
+		<jb:value property="priceSales" decoder="String" data="quote/priceSales" />
+		<jb:value property="priceBook" decoder="String" data="quote/priceBook" />
+		<jb:value property="symbol" decoder="String" data="quote/symbol" />
+		<jb:value property="shortRatio" decoder="String" data="quote/shortRatio" />
+		<jb:value property="lastTradeTime" decoder="String" data="quote/lastTradeTime" />
+		<jb:value property="oneyrTargetPrice" decoder="String" data="quote/oneyrTargetPrice" />
+		<jb:value property="volume" decoder="String" data="quote/volume" />
+		<jb:value property="yearRange" decoder="String" data="quote/yearRange" />
+		<jb:value property="daysValueChange" decoder="String" data="quote/daysValueChange" />
+		<jb:value property="daysValueChangeRealtime" decoder="String" data="quote/daysValueChangeRealtime" />
+		<jb:value property="stockExchange" decoder="String" data="quote/stockExchange" />
+		<jb:value property="percentChange" decoder="String" data="quote/percentChange" />
+		<jb:value property="ask" decoder="String" data="quote/ask" />
+		<jb:value property="averageDailyVolume" decoder="String" data="quote/averageDailyVolume" />
+		<jb:value property="bid" decoder="String" data="quote/bid" />
+		<jb:value property="askRealtime" decoder="String" data="quote/askRealtime" />
+		<jb:value property="bidRealtime" decoder="String" data="quote/bidRealtime" />
+		<jb:value property="bookValue" decoder="String" data="quote/bookValue" />
+		<jb:value property="changePercentChange" decoder="String" data="quote/changePercentChange" />
+		<jb:value property="change" decoder="String" data="quote/change" />
+	</jb:bindings>
+
+</smooks-resource-list>

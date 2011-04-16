@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng">
+  <xs:import namespace="http://www.yahooapis.com/v1/base.rng" schemaLocation="yahoo.xsd"/>
+  <xs:element name="query">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="results"/>
+      </xs:sequence>
+      <xs:attribute ref="yahoo:count" use="required"/>
+      <xs:attribute ref="yahoo:created" use="required"/>
+      <xs:attribute ref="yahoo:lang" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="results">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="quote"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="quote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ChangeRealtime"/>
+        <xs:element ref="LastTradeDate"/>
+        <xs:element ref="EarningsShare"/>
+        <xs:element ref="DaysLow"/>
+        <xs:element ref="DaysHigh"/>
+        <xs:element ref="YearLow"/>
+        <xs:element ref="YearHigh"/>
+        <xs:element ref="MarketCapitalization"/>
+        <xs:element ref="ChangeFromYearLow"/>
+        <xs:element ref="PercentChangeFromYearLow"/>
+        <xs:element ref="ChangePercentRealtime"/>
+        <xs:element ref="ChangeFromYearHigh"/>
+        <xs:element ref="PercebtChangeFromYearHigh"/>
+        <xs:element ref="LastTradePriceOnly"/>
+        <xs:element ref="HighLimit"/>
+        <xs:element ref="LowLimit"/>
+        <xs:element ref="DaysRange"/>
+        <xs:element ref="DaysRangeRealtime"/>
+        <xs:element ref="FiftydayMovingAverage"/>
+        <xs:element ref="TwoHundreddayMovingAverage"/>
+        <xs:element ref="ChangeFromTwoHundreddayMovingAverage"/>
+        <xs:element ref="PercentChangeFromTwoHundreddayMovingAverage"/>
+        <xs:element ref="ChangeFromFiftydayMovingAverage"/>
+        <xs:element ref="PercentChangeFromFiftydayMovingAverage"/>
+        <xs:element ref="Name"/>
+        <xs:element ref="Open"/>
+        <xs:element ref="PreviousClose"/>
+        <xs:element ref="PricePaid"/>
+        <xs:element ref="ChangeinPercent"/>
+        <xs:element ref="PriceSales"/>
+        <xs:element ref="PriceBook"/>
+        <xs:element ref="Symbol"/>
+        <xs:element ref="ShortRatio"/>
+        <xs:element ref="LastTradeTime"/>
+        <xs:element ref="OneyrTargetPrice"/>
+        <xs:element ref="Volume"/>
+        <xs:element ref="YearRange"/>
+        <xs:element ref="DaysValueChange"/>
+        <xs:element ref="DaysValueChangeRealtime"/>
+        <xs:element ref="StockExchange"/>
+        <xs:element ref="PercentChange"/>
+        <xs:element ref="Ask"/>
+        <xs:element ref="AverageDailyVolume"/>
+        <xs:element ref="Bid"/>
+        <xs:element ref="AskRealtime"/>
+        <xs:element ref="BidRealtime"/>
+        <xs:element ref="BookValue"/>
+        <xs:element ref="Change_PercentChange"/>
+        <xs:element ref="Change"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeRealtime" type="xs:string"/>
+  <xs:element name="LastTradeDate" type="xs:string"/>
+  <xs:element name="EarningsShare" type="xs:string"/>
+  <xs:element name="DaysLow" type="xs:string"/>
+  <xs:element name="DaysHigh" type="xs:string"/>
+  <xs:element name="YearLow" type="xs:string"/>
+  <xs:element name="YearHigh" type="xs:string"/>
+  <xs:element name="MarketCapitalization" type="xs:string"/>
+  <xs:element name="ChangeFromYearLow" type="xs:string"/>
+  <xs:element name="PercentChangeFromYearLow" type="xs:string"/>
+  <xs:element name="ChangePercentRealtime" type="xs:string"/>
+  <xs:element name="ChangeFromYearHigh" type="xs:decimal"/>
+  <xs:element name="PercebtChangeFromYearHigh" type="xs:string"/>
+  <xs:element name="LastTradePriceOnly" type="xs:string"/>
+  <xs:element name="HighLimit" type="xs:string"/>
+  <xs:element name="LowLimit" type="xs:string"/>
+  <xs:element name="DaysRange" type="xs:string"/>
+  <xs:element name="DaysRangeRealtime" type="xs:string"/>
+  <xs:element name="FiftydayMovingAverage" type="xs:string"/>
+  <xs:element name="TwoHundreddayMovingAverage" type="xs:string"/>
+  <xs:element name="ChangeFromTwoHundreddayMovingAverage" type="xs:string"/>
+  <xs:element name="PercentChangeFromTwoHundreddayMovingAverage" type="xs:string"/>
+  <xs:element name="ChangeFromFiftydayMovingAverage" type="xs:string"/>
+  <xs:element name="PercentChangeFromFiftydayMovingAverage" type="xs:string"/>
+  <xs:element name="Name" type="xs:string"/>
+  <xs:element name="Open" type="xs:string"/>
+  <xs:element name="PreviousClose" type="xs:string"/>
+  <xs:element name="PricePaid" type="xs:string"/>
+  <xs:element name="ChangeinPercent" type="xs:string"/>
+  <xs:element name="PriceSales" type="xs:string"/>
+  <xs:element name="PriceBook" type="xs:string"/>
+  <xs:element name="Symbol" type="xs:string"/>
+  <xs:element name="ShortRatio" type="xs:string"/>
+  <xs:element name="LastTradeTime" type="xs:string"/>
+  <xs:element name="OneyrTargetPrice" type="xs:string"/>
+  <xs:element name="Volume" type="xs:string"/>
+  <xs:element name="YearRange" type="xs:string"/>
+  <xs:element name="DaysValueChange" type="xs:string"/>
+  <xs:element name="DaysValueChangeRealtime" type="xs:string"/>
+  <xs:element name="StockExchange" type="xs:string"/>
+  <xs:element name="PercentChange" type="xs:string"/>
+  <xs:element name="Ask" type="xs:string"/>
+  <xs:element name="AverageDailyVolume" type="xs:string"/>
+  <xs:element name="Bid" type="xs:string"/>
+  <xs:element name="AskRealtime" type="xs:string"/>
+  <xs:element name="BidRealtime" type="xs:string"/>
+  <xs:element name="BookValue" type="xs:string"/>
+  <xs:element name="Change_PercentChange" type="xs:string"/>
+  <xs:element name="Change" type="xs:string"/>
+</xs:schema>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng"
+	yahoo:count="2" yahoo:created="2011-04-03T16:12:48Z" yahoo:lang="en-US">
+	<results>
+		<quote>
+			<ChangeRealtime>+0.33</ChangeRealtime>
+			<LastTradeDate>4/1/2011</LastTradeDate>
+			<EarningsShare>3.45</EarningsShare>
+			<DaysLow>28.52</DaysLow>
+			<DaysHigh>29.19</DaysHigh>
+			<YearLow>18.21</YearLow>
+			<YearHigh>29.75</YearHigh>
+			<MarketCapitalization>153.3B</MarketCapitalization>
+			<ChangeFromYearLow>+10.87</ChangeFromYearLow>
+			<PercentChangeFromYearLow>+59.69%</PercentChangeFromYearLow>
+			<ChangePercentRealtime>N/A - +1.15%</ChangePercentRealtime>
+			<ChangeFromYearHigh>-0.67</ChangeFromYearHigh>
+			<PercebtChangeFromYearHigh>-2.25%</PercebtChangeFromYearHigh>
+			<LastTradePriceOnly>29.08</LastTradePriceOnly>
+			<HighLimit />
+			<LowLimit />
+			<DaysRange>28.52 - 29.19</DaysRange>
+			<DaysRangeRealtime>N/A - N/A</DaysRangeRealtime>
+			<FiftydayMovingAverage>28.7786</FiftydayMovingAverage>
+			<TwoHundreddayMovingAverage>27.3474</TwoHundreddayMovingAverage>
+			<ChangeFromTwoHundreddayMovingAverage>+1.7326</ChangeFromTwoHundreddayMovingAverage>
+			<PercentChangeFromTwoHundreddayMovingAverage>+6.34%</PercentChangeFromTwoHundreddayMovingAverage>
+			<ChangeFromFiftydayMovingAverage>+0.3014</ChangeFromFiftydayMovingAverage>
+			<PercentChangeFromFiftydayMovingAverage>+1.05%</PercentChangeFromFiftydayMovingAverage>
+			<Name>Vodafone Group Pl</Name>
+			<Open>28.55</Open>
+			<PreviousClose>28.75</PreviousClose>
+			<PricePaid />
+			<ChangeinPercent>+1.15%</ChangeinPercent>
+			<PriceSales>2.08</PriceSales>
+			<PriceBook>1.04</PriceBook>
+			<Symbol>VOD</Symbol>
+			<ShortRatio>1.30</ShortRatio>
+			<LastTradeTime>4:00pm</LastTradeTime>
+			<OneyrTargetPrice>33.61</OneyrTargetPrice>
+			<Volume>7144822</Volume>
+			<YearRange>18.21 - 29.75</YearRange>
+			<DaysValueChange>- - +1.15%</DaysValueChange>
+			<DaysValueChangeRealtime>N/A - N/A</DaysValueChangeRealtime>
+			<StockExchange>NasdaqNM</StockExchange>
+			<PercentChange>+1.15%</PercentChange>
+			<Ask>29.57</Ask>
+			<AverageDailyVolume>7393650</AverageDailyVolume>
+			<Bid>28.80</Bid>
+			<AskRealtime>29.57</AskRealtime>
+			<BidRealtime>28.80</BidRealtime>
+			<BookValue>27.54</BookValue>
+			<Change_PercentChange>+0.33 - +1.15%</Change_PercentChange>
+			<Change>+0.33</Change>
+		</quote>
+		<quote>
+			<ChangeRealtime>+0.41</ChangeRealtime>
+			<LastTradeDate>4/1/2011</LastTradeDate>
+			<EarningsShare>-339.04</EarningsShare>
+			<DaysLow>13.50</DaysLow>
+			<DaysHigh>13.67</DaysHigh>
+			<YearLow>10.28</YearLow>
+			<YearHigh>17.90</YearHigh>
+			<MarketCapitalization>72.9M</MarketCapitalization>
+			<ChangeFromYearLow>+3.31</ChangeFromYearLow>
+			<PercentChangeFromYearLow>+32.20%</PercentChangeFromYearLow>
+			<ChangePercentRealtime>N/A - +3.11%</ChangePercentRealtime>
+			<ChangeFromYearHigh>-4.31</ChangeFromYearHigh>
+			<PercebtChangeFromYearHigh>-24.08%</PercebtChangeFromYearHigh>
+			<LastTradePriceOnly>13.59</LastTradePriceOnly>
+			<HighLimit />
+			<LowLimit />
+			<DaysRange>13.50 - 13.67</DaysRange>
+			<DaysRangeRealtime>N/A - N/A</DaysRangeRealtime>
+			<FiftydayMovingAverage>16.9849</FiftydayMovingAverage>
+			<TwoHundreddayMovingAverage>16.2312</TwoHundreddayMovingAverage>
+			<ChangeFromTwoHundreddayMovingAverage>-2.6412</ChangeFromTwoHundreddayMovingAverage>
+			<PercentChangeFromTwoHundreddayMovingAverage>-16.27%</PercentChangeFromTwoHundreddayMovingAverage>
+			<ChangeFromFiftydayMovingAverage>-3.3949</ChangeFromFiftydayMovingAverage>
+			<PercentChangeFromFiftydayMovingAverage>-19.99%</PercentChangeFromFiftydayMovingAverage>
+			<Name>Royal Bank of Sco</Name>
+			<Open>13.58</Open>
+			<PreviousClose>13.18</PreviousClose>
+			<PricePaid />
+			<ChangeinPercent>+3.11%</ChangeinPercent>
+			<PriceSales>0.00</PriceSales>
+			<PriceBook>0.58</PriceBook>
+			<Symbol>RBS</Symbol>
+			<ShortRatio>2.50</ShortRatio>
+			<LastTradeTime>4:04pm</LastTradeTime>
+			<OneyrTargetPrice />
+			<Volume>402423</Volume>
+			<YearRange>10.28 - 17.90</YearRange>
+			<DaysValueChange>- - +3.11%</DaysValueChange>
+			<DaysValueChangeRealtime>N/A - N/A</DaysValueChangeRealtime>
+			<StockExchange>NYSE</StockExchange>
+			<PercentChange>+3.11%</PercentChange>
+			<Ask />
+			<AverageDailyVolume>44282</AverageDailyVolume>
+			<Bid />
+			<AskRealtime>14.27</AskRealtime>
+			<BidRealtime>12.91</BidRealtime>
+			<BookValue>22.66</BookValue>
+			<Change_PercentChange>+0.41 - +3.11%</Change_PercentChange>
+			<Change>+0.41</Change>
+		</quote>
+	</results>
+</query><!-- total: 254 --><!-- engine3.yql.ird.yahoo.com -->

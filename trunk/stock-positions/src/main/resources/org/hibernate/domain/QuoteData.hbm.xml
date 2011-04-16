@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.hibernate.domain">
+	<class name="QuoteData" table="QUOTES">
+		<id name="quoteId" column="QUOTE_ID">
+			<generator class="native" />
+		</id>
+		<property name="changeRealtime" column="CHANGE_REALTIME" />
+		<property name="lastTradeDate" column="LAST_TRADE_DATE" />
+		<property name="earningsShare" column="EARNINGS_SHARE" />
+		<property name="daysLow" column="DAYS_LOW" />
+		<property name="daysHigh" column="DAYS_HIGH" />
+		<property name="yearLow" column="YEAR_LOW" />
+		<property name="yearHigh" column="YEAR_HIGH" />
+		<property name="marketCapitalization" column="MARKET_CAPITALIZATION" />
+		<property name="changeFromYearLow" column="CHANGE_FROM_YEAR_LOW" />
+		<property name="percentChangeFromYearLow" column="PERCENT_CHANGE_FROM_YEAR_LOW" />
+		<property name="changePercentRealtime" column="CHANGE_PERCENT_REALTIME" />
+		<property name="changeFromYearHigh" column="CHANGE_FROM_YEAR_HIGH" />
+		<property name="percebtChangeFromYearHigh" column="PERCENT_CHANGE_FROM_YEAR_HIGH" />
+		<property name="lastTradePriceOnly" column="LAST_TRADE_PRICE_ONLY" />
+		<property name="highLimit" column="HIGH_LIMIT" />
+		<property name="lowLimit" column="LOW_LIMIT" />
+		<property name="daysRange" column="DAYS_RANGE" />
+		<property name="daysRangeRealtime" column="DAYS_RANGE_REALTIME" />
+		<property name="fiftydayMovingAverage" column="FIFTY_DAY_MA" />
+		<property name="twoHundreddayMovingAverage" column="TWO_HUNDRED_DAY_MA" />
+		<property name="changeFromTwoHundreddayMovingAverage" column="TWO_HUNDRED_DAY_MA_CHNGE" />
+		<property name="percentChangeFromTwoHundreddayMovingAverage" column="TWO_HUNDRED_DAY_MA_PRCNT_CHNGE" />
+		<property name="changeFromFiftydayMovingAverage" column="FIFTY_DAY_MA_CHNGE" />
+		<property name="percentChangeFromFiftydayMovingAverage" column="FIFTY_DAY_MA_PRCNT_CHNGE" />
+		<property name="name" column="NAME" />
+		<property name="open" column="OPEN" />
+		<property name="previousClose" column="PREVIOUS_CLOSE" />
+		<property name="pricePaid" column="PRICE_PAID" />
+		<property name="changeinPercent" column="CHANGEIN_PERCENT" />
+		<property name="priceSales" column="PRICE_SALES" />
+		<property name="priceBook" column="PRICE_BOOK" />
+		<property name="symbol" column="SYMBOL" />
+		<property name="shortRatio" column="SHORT_RATIO" />
+		<property name="lastTradeTime" column="LAST_TRADE_TIME" />
+		<property name="oneyrTargetPrice" column="ONEYR_TARGET_PRICE" />
+		<property name="volume" column="VOLUME" />
+		<property name="yearRange" column="YEAR_RANGE" />
+		<property name="daysValueChange" column="DAYS_VALUE_CHANGE" />
+		<property name="daysValueChangeRealtime" column="DAYS_VALUE_CHANGE_REALTIME" />
+		<property name="stockExchange" column="STOCK_EXCHANGE" />
+		<property name="percentChange" column="PERCENT_CHANGE" />
+		<property name="ask" column="ASK" />
+		<property name="averageDailyVolume" column="AVERAGE_DAILY_VOLUME" />
+		<property name="bid" column="BID" />
+		<property name="askRealtime" column="ASK_REALTIME" />
+		<property name="bidRealtime" column="BID_REALTIME" />
+		<property name="bookValue" column="BOOK_VALUE" />
+		<property name="change_PercentChange" column="CHANGE_PERCENT_CHANGE" />
+		<property name="actualChange" column="ACTUAL_CHANGE" />
+	</class>
+</hibernate-mapping>

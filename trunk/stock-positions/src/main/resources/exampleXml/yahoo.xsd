@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.yahooapis.com/v1/base.rng" xmlns:yahoo="http://www.yahooapis.com/v1/base.rng">
+  <xs:import schemaLocation="query.xsd"/>
+  <xs:attribute name="count" type="xs:integer"/>
+  <xs:attribute name="created" type="xs:NMTOKEN"/>
+  <xs:attribute name="lang" type="xs:NCName"/>
+</xs:schema>

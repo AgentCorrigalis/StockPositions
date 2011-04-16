@@ -1,0 +1,40 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+    <head>
+        <title>Stock Positions: Query for Latest Stock Data</title>
+        <link href="http://alexco.dyndns-home.com/concordion/concordion.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Stock Positions: Query for Latest Stock Data</h1>
+        <p>To collect market data for instruments a query needs to be built that contains the instrument symbol(s). Executing the query will return market 
+		data for the requested instruments and write it to a database.</p>
+        <div id="ex1" class="example">
+            <h3>Market Data is Returned for Three Requested Instrument</h3>
+			<p>Market data is returned for multiple requested instrument.</p>
+			<h4>Given:</h4>
+			<p concordion:execute="initialise()">No existing quote data.</p>
+			<p>Market data is required for instruments with a symbol of <i concordion:set="#symbols">VOD,RBS,GOOG</i></p>
+			<h4>When:</h4>
+			<p>A <i concordion:execute="getAllMarketDataForSymbols(#symbols)">request for the market data</i> is made</p>
+			<h4>Then:</h4>
+			<p>Market data is written to the Stock Position database, with the following static data:</p>
+			<table concordion:verifyRows="#quote : getAllPersistedMarketData()">
+				<tr>
+					<th concordion:assertEquals="#quote.symbol">Symbol</th>
+					<th concordion:assertEquals="#quote.name">Name</th>
+				</tr>
+				<tr>
+					<td>VOD</td>
+					<td>Vodafone Group Pl</td>
+				</tr>
+				<tr>
+					<td>RBS</td>
+					<td>Royal Bank of Sco</td>
+				</tr>
+				<tr>
+					<td>GOOG</td>
+					<td>Google Inc.</td>
+				</tr>
+			</table>
+        </div>
+    </body>
+</html>
