@@ -7,10 +7,6 @@ import java.net.URL;
 import junit.framework.TestCase;
 
 import org.apache.commons.lang.StringUtils;
-import org.hibernate.domain.QuoteData;
-import org.hibernate.util.DatabaseCleaner;
-import org.junit.Ignore;
-import org.xml.sax.SAXException;
 
 import com.acorr.stockPositions.YahooStockQuoteQueryEngine;
 
