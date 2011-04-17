@@ -29,7 +29,7 @@
 	</build>
 
 	<dependencies>
-		<!--  Local -->
+		<!-- Local -->
 		<dependency>
 			<groupId>com.acorr</groupId>
 			<artifactId>stock-positions-database</artifactId>
@@ -63,14 +63,20 @@
 			<version>3.3.2.GA</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.slf4j</groupId>
-		    <artifactId>slf4j-log4j12</artifactId>
-		    <version>1.6.1</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.6.1</version>
 		</dependency>
 		<dependency>
-        	<groupId>mysql</groupId>
-        	<artifactId>mysql-connector-java</artifactId>
-        	<version>5.0.5</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.0.5</version>
+		</dependency>
+		<dependency>
+			<groupId>org.easymock</groupId>
+			<artifactId>easymock</artifactId>
+			<version>3.0</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 </project>

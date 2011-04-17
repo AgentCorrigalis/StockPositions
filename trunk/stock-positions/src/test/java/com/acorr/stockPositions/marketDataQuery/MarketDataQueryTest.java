@@ -3,17 +3,16 @@ package com.acorr.stockPositions.marketDataQuery;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
 
 import junit.framework.TestCase;
 
 import org.apache.commons.lang.StringUtils;
 import org.hibernate.domain.QuoteData;
 import org.hibernate.util.DatabaseCleaner;
+import org.junit.Ignore;
 import org.xml.sax.SAXException;
 
 import com.acorr.stockPositions.YahooStockQuoteQueryEngine;
-import com.acorr.stockPositions.queryResultMessage.Quotes;
 
 public class MarketDataQueryTest extends TestCase {
 	
@@ -34,19 +33,10 @@ public class MarketDataQueryTest extends TestCase {
 		String symbols = "VOD,RBS";
 		assertUrl(expectedUrlForOneSymbol, symbols);
 	}
-	
+
 	public void testQueryGetsQuote() throws IOException {
 		String symbols = "VOD,RBS";
 		URL queryUrl = queryEngine.getUrlForSymbols(symbols);
-		assertSymbolsInStockQuote(symbols, queryEngine.executeQuery(queryUrl));
-	}
-	
-	public void testQuoteWritten() throws IOException, SAXException {
-		DatabaseCleaner.cleanTable(QuoteData.class);
-		String symbols = "VOD,RBS";
-		URL queryUrl = queryEngine.getUrlForSymbols(symbols);
-		String stockResult = queryEngine.executeQuery(queryUrl);
-		List<Quotes> quotes = queryEngine.buildStockQuoteRecord(stockResult);
 		assertSymbolsInStockQuote(symbols, queryEngine.executeQuery(queryUrl));
 	}
 	
